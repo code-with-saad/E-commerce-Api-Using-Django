@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-5t-=uva043z%rkuk&lg+2p+be)1d!ejo^(%2$9&zh#9t5hc@i*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+import os
 
 ALLOWED_ORIGINS = ['http://*', 'https://*','https://ecommerce-production.up.railway.app']
 CSRF_TRUSTED_ORIGINS = ALLOWED_ORIGINS.copy()
@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'products',
-    'rest_framework'
+    'rest_framework',
+    'cartitems'
 ]
 
 MIDDLEWARE = [
