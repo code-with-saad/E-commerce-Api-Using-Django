@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from rest_framework.decorators import api_view
 from cartitems.models import CartItem
 from cartitems.serializers import CartItemSerializer
